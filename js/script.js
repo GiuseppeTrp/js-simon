@@ -16,3 +16,22 @@ monday.setSeconds(0);
 monday.setMilliseconds(0); 
 
 console.log(monday); 
+
+
+
+// differenza di tempo tra now e monday
+
+
+let time = monday.getTime() - now.getTime();
+
+// trasforma da ms in secondi
+let secondTime = Math.floor( time / 1000);
+
+
+console.log(secondTime);
+
+
+
+
+
+
