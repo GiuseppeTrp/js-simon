@@ -27,8 +27,22 @@ let time = monday.getTime() - now.getTime();
 // trasforma da ms in secondi
 let secondTime = Math.floor( time / 1000);
 
+// da secondi a giorni
+let days =  Math.floor( secondTime / (24 * 3600));
+// trasforma i secondi in ore 
+let hours =   Math.floor(secondTime / 3600) ;
+
+
+// da secondi a minuti
+let minutes =  Math.floor(secondTime / (3600 / 60));
+
+
+
 
 console.log(secondTime);
+console.log("days",days);
+console.log("hours",hours);
+console.log("minuti",minutes);
 
 
 
