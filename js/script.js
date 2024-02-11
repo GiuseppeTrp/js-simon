@@ -1,3 +1,5 @@
+
+function countDown(){
 // Ottiene la data e l'ora attuali (del momento in cui si esegue il codice)
 let now = new Date();
 
@@ -24,12 +26,12 @@ console.log(monday);
 
 let time = monday.getTime() - now.getTime();
 
-// trasforma da ms in secondi
+// trasforma il risultato da ms in secondi
 let secondTime = Math.floor( time / 1000);
 
 // da secondi a giorni
 let days =  Math.floor( secondTime / (24 * 3600));
-// trasforma i secondi in ore 
+// da secondi a ore 
 let hours =   Math.floor(secondTime / 3600) ;
 
 
@@ -49,3 +51,6 @@ console.log("minuti",minutes);
 
 
 
+}
+
+let interval = setInterval(countDown, 1000);
