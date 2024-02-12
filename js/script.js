@@ -24,6 +24,11 @@ console.log(monday);
 
 
 let time = monday.getTime() - now.getTime();
+if (time <= 0) {
+    clearInterval(interval);
+    document.getElementById("result").innerHTML = "Giorni: 0<br>Ore: 0<br>Minuti: 0<br>Secondi: 0";
+    return;
+}
 
 // trasforma il risultato da ms in secondi
 let seconds = Math.floor( time / 1000);
