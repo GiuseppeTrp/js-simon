@@ -27,6 +27,7 @@ let time = monday.getTime() - now.getTime();
 if (time <= 0) {
     clearInterval(interval);
     document.getElementById("result").innerHTML = "Giorni: 0<br>Ore: 0<br>Minuti: 0<br>Secondi: 0";
+    document.getElementById("monday").innerHTML = monday.toDateString();
     return;
 }
 
